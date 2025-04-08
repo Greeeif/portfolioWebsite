@@ -15,51 +15,55 @@ body {
     background-color: #324532;
 }   
 
+header {
+    height: 50vh;
+}
+
 .logoContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
-    
+    height:80%;
 }
 
 .companyLogo {
-    height: 13%;
-    width: 13%;
+    height: 80%;
+    width: 8%;
 }
 
 .companyName {
     font-family: "Sacramento", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 96px;
+    font-size: 3vw; 
     color: #e1dfd3;
-    letter-spacing: 5px;
+    letter-spacing: 0.1em; 
     margin: 0;
 }
-
 .navBar {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     display: flex;
+    height: 30%;
     color: #e1dfd3;
     list-style: none;
     gap: 100px;
     justify-content: center;
     margin: 30px;
     letter-spacing: 2px;
-    font-size: 24px;
+    font-size: 1vw;
 }
 
 .navList {
-    height: 70px;
-    width: 80%;
+    height: 60%;
+    width: 20%;
     text-align: center;
+    align-content: center;
     background-image: url(../assets/Rectangle.svg);
-    background-size: 100%;
+    background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
-    
 }
