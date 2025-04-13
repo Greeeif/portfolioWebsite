@@ -19,6 +19,11 @@ header {
     height: 50vh;
 }
 
+a {
+    text-decoration: none;
+    color: #e1dfd3;
+}
+
 .logoContainer {
     display: flex;
     flex-direction: column;
@@ -67,3 +72,4 @@ header {
     border-color: #94947C;
     background-color: #94947C;
 }
+
