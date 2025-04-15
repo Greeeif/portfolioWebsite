@@ -1,3 +1,16 @@
+/* CSS Document */
+
+:root {
+    /* Color Palette (Darkest to Lightest) */
+    --brunswick-green: #263A26; /* Deep forest green, darkest shade */
+    --dark-slate-gray: #36545C; /* Deep teal/slate */
+    --seal-brown: #56321A; /* Rich brown */
+    --cedar: #A55C39; /* Warm, distinct accent */
+    --cambridge-blue: #8CA399; /* Sage green */
+    --battleship-gray: #A9A991; /* Lightened grayish olive */
+    --alabaster: #E1DFD3; /* Lightest shade, for primary backgrounds */
+    --bone: #E8E6D9; /* Light cream, for secondary backgrounds */
+}
 
 body, html {
     margin: 0;
@@ -7,62 +20,32 @@ body, html {
 }
 
 body {
-    background-image: url(../assets/background.png);
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-color: #324532;
+    background-color: var(--brunswick-green);
 }   
 
-header {
-    height: 50vh;
-}
-
-a {
+#textLink {
     text-decoration: none;
-    color: #e1dfd3;
+    color:var(--alabaster);
 }
 
-.logoContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 100px;
-    height:80%;
-}
+/* home page css */
 
-.companyLogo {
-    height: 80%;
-    object-fit: contain;
-}
-
-.companyName {
-    font-family: "Sacramento", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3vw; 
-    color: #e1dfd3;
-    letter-spacing: 0.1em; 
-    margin: 0;
-}
-.navBar {
+.navBarHome {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     display: flex;
-    height: 30%;
+    height: 4rem;
     color: #e1dfd3;
     list-style: none;
-    gap: 100px;
+    gap: 8rem;
     justify-content: center;
-    margin: 30px;
-    letter-spacing: 2px;
-    font-size: 1vw;
+    letter-spacing: 0.125rem;
+    font-size: 0.8rem;
 }
 
-.navList {
+.navListHome {
     height: 60%;
     width: 20%;
     text-align: center;
@@ -71,5 +54,74 @@ a {
     border-radius: 5% / 50% ;
     border-color: #94947C;
     background-color: #94947C;
+}
+
+.logoContainerHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:20rem;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.companyLogoHome {
+    height: 15rem;
+    object-fit: contain;
+}
+
+.companyNameHome {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem; 
+    color: #e1dfd3;
+    letter-spacing: 0.1em; 
+    margin: 0;
+}
+
+/* other pages css */
+
+.navListOther {
+    height: 60%;
+    width: 20%;
+    text-align: center;
+    align-content: center;
+}
+
+.navBarOther {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    color: #e1dfd3;
+    list-style: none;
+    background-color: var(--cedar);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoContainerOther {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+}
+
+.companyLogoOther {
+    height: 4rem;
+    margin: 0.3rem 0 0 1.2rem;
+    object-fit: contain;
+}
+
+.companyNameOther {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem; 
+    color: #e1dfd3;
+    letter-spacing: 0.1em; 
+    margin: 0 0 0.2rem 0;
 }
 
