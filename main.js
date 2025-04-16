@@ -1,9 +1,9 @@
-const navListItems = document.querySelectorAll('.navList')
+const navListItems = document.querySelectorAll('.navListHome')
 
 navListItems.forEach(navItem => {
     navItem.onmousedown = function() {
         this.style.backgroundColor = '#e1dfd3';
-        this.style.color = '#324532'
+        this.style.color = '#263A26'
     }
     navItem.onmouseup = function() {
         this.style.backgroundColor = '#94947c';
