@@ -23,6 +23,24 @@ body {
     background-color: var(--brunswick-green);
 }   
 
+.bg-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem; 
+    z-index: -1;
+    pointer-events: none; 
+    background-color: #8ca39960;
+  }
+  
+  .bg-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
 #textLink {
     text-decoration: none;
     color:var(--alabaster);
