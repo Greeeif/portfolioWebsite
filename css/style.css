@@ -23,9 +23,25 @@ body {
     background-color: var(--brunswick-green);
 }   
 
+h1 {
+  color: var(--alabaster);
+}
+
+h2 {
+  color: var(--cambridge-blue);
+}
+
+h3 {
+  color: var(--battleship-gray);
+}
+
+p {
+  color:var(--bone);
+}
+
 .sidebar {
     height: 100%;
-    width: 0;
+    width: 0; /* 0 width - change this with JavaScript */
     position: fixed;
     z-index: 1;
     top: 0;
@@ -63,10 +79,12 @@ body {
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
+    background-color: var(--dark-slate-gray);
     color: white;
     padding: 10px 15px;
-    border: none;
+    border: var(--dark-slate-gray);
+    border-style: solid;
+    border-radius: 1rem 2rem;
   }
   
   .openbtn:hover {
