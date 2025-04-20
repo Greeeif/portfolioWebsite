@@ -23,7 +23,7 @@ body {
     background-color: var(--brunswick-green);
 }   
 
-.bg-container {
+.bgContainer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -31,10 +31,9 @@ body {
     height: 10rem; 
     z-index: -1;
     pointer-events: none; 
-    background-color: #8ca39960;
   }
   
-  .bg-svg {
+.bgSVG {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -115,9 +114,13 @@ body {
     display: flex;
     color: #e1dfd3;
     list-style: none;
-    background-color: var(--cedar);
     justify-content: space-around;
     align-items: center;
+    border-style: solid;
+    border-color: var(--cambridge-blue);
+    border-radius: 10% / 90% ;
+    margin: 0.5rem 10rem;
+    background-color: var(--cambridge-blue);
 }
 
 .logoContainerOther {
