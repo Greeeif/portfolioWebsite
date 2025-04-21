@@ -30,3 +30,18 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
+
+function toggleNav() {
+    const sidebar = document.getElementById("mySidebar");
+    
+    // Get computed width to account for CSS styles
+    const sidebarWidth = window.getComputedStyle(sidebar).width;
+    
+    if (sidebarWidth === "0px" || sidebarWidth === "") {
+      openNav();
+      document.querySelector(".openbtn").innerHTML = "&#9776; Close Sidebar";
+    } else {
+      closeNav();
+      document.querySelector(".openbtn").innerHTML = "&#9776; Open Sidebar";
+    }
+  }
